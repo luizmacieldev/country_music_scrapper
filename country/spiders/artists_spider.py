@@ -1,6 +1,6 @@
 import re, scrapy
 from urllib.parse import urljoin
-from country.items import ArtistItem  # Importe o seu item aqui
+from country.items import ArtistItem
 
 class ArtistsSpider(scrapy.Spider):
     name = 'artists'
