@@ -1,7 +1,6 @@
 import re
 import scrapy
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import TakeFirst, MapCompose
 from urllib.parse import urljoin
 from country.items import ArtistItem
 
