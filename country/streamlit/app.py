@@ -35,9 +35,11 @@ if selected_artist:
             with cols[i]:
                 st.image(photo, caption=f'Photo {i + 1} of {selected_artist["name"]}', width=120)
 
-
-    st.write("### 🏷️ Main Tags")
-    st.write(" | ".join([f" {tag}" for tag in selected_artist['principal_tags']]))
+    if selected_artist.get('principal_tags'):
+        st.write("### 🏷️ Main Tags")
+        st.write(" | ".join([f" {tag}" for tag in selected_artist['principal_tags']]))
+    else:
+        st.write("No tags found")
 
     st.write("\n\n")
 
