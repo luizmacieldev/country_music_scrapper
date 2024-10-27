@@ -5,6 +5,7 @@ Este projeto foi desenvolvido utilizando o framework **Scrapy**, com o objetivo 
 
 ![image](https://github.com/user-attachments/assets/58911373-b0a3-4a4d-a0ad-ea15bc10a0c3)
 
+![Capturar](https://github.com/user-attachments/assets/fe1b6926-6100-41d7-90e5-244330a3cc5e)
 
 
 
