@@ -1,6 +1,6 @@
 # 🎧 Last.fm Country Artists Scraper
 
-Este projeto foi desenvolvido utilizando o framework **Scrapy**, com o objetivo de coletar informações detalhadas sobre artistas de música country diretamente do site Last.fm.<br/> Ele faz a coleta de dados de perfis de artistas, estrutura e armazena as informações em um banco de dados **MongoDB** e utiliza **Streamlit** para a visualização dos dados, facilitando a exploração e análise das informações extraídas.
+This project was developed using the **Scrapy** framework to collect detailed information about country music artists directly from the Last.fm website.<br/> It gathers artist profile data, structures and stores the information in a **MongoDB** database, and uses **Streamlit** for data visualization, making it easier to explore and analyze the extracted information.
 
 
 ![image](https://github.com/user-attachments/assets/58911373-b0a3-4a4d-a0ad-ea15bc10a0c3)
@@ -10,47 +10,47 @@ Este projeto foi desenvolvido utilizando o framework **Scrapy**, com o objetivo 
 
 
 
-## 📋 Funcionalidades
-As principais informações extraídas sobre cada artista incluem:
+## 📋 Features
+The main information extracted for each artist includes:
 
-- **Nome do Artista**: Nome completo do artista ou banda.
-- **Ouvintes**: Quantidade de ouvintes no Last.fm.
-- **Foto do Artista**: URL da imagem de perfil.
-- **Mini Biografia**: Breve descrição sobre o artista.
-- **URL do Artista**: Link para o perfil completo no Last.fm.
-- **Principais Gêneros**: Tags mais frequentes associadas ao artista.
-- **Músicas Mais Ouvidas**: As 10 faixas mais reproduzidas, com nome e link para cada uma.
-- **Álbuns Mais Populares**: Lista de álbuns mais ouvidos, com detalhes como foto do album, número de faixas, ano de lançamento e quantidade de ouvintes.
-- **Fotos do Artista**: Links com as principais fotos do artista.
-- **Redes Sociais**: URLs das principais redes sociais do artista.
-- **Biografia**: Texto completo da biografia completa do artista.
+- **Artist Name**: Full name of the artist or band.
+- **Listeners**: Number of listeners on Last.fm.
+- **Artist Photo**: URL of the profile picture.
+- **Mini Biography**: Short description about the artist.
+- **Artist URL**: Link to the full profile on Last.fm.
+- **Top Genres**: Most frequent tags associated with the artist.
+- **Top Tracks**: The 10 most played tracks, with name and link for each.
+- **Popular Albums**: List of top albums, including details like album cover, track count, release year, and listener count.
+- **Artist Photos**: Links to the main photos of the artist.
+- **Social Media**: URLs to the artist’s main social media profiles.
+- **Full Biography**: Full text of the artist’s biography.
 
-## 📦 Armazenamento no MongoDB
-Os dados coletados são organizados e armazenados no MongoDB, permitindo fácil acesso e consulta. Cada documento no banco de dados inclui todas as informações mencionadas acima para cada artista de country disponível no Last.fm.
+## 📦 MongoDB Storage
+The collected data is organized and stored in MongoDB, enabling easy access and querying. Each document in the database includes all the information mentioned above for each country artist available on Last.fm.
 
-## 🚀 Como Rodar o Projeto
+## 🚀 How to Run the Project
 
-### Pré-requisitos
+### Prerequisites
 - **Python 3.8+**
 - **Scrapy**
 - **MongoDB**
 - **Streamlit**
 
-### Instruções
+### Instructions
 
-1. Clone este repositório:
+1. Clone this repository:
    **git clone https://github.com/luizmacieldev/country_music_scrapper**
 
-2. Instalar as dependências:
+2. Install the dependencies:
   **pip install -r requirements.txt**
 
-3. Utilizar o comando abaixo para iniciar o processo, esse processo irá iniciar a coleta e estruturação dos dados e salvar em um database chamado "country_db" e na collection "artists"<br>
+3. Use the command below to start the process. This will begin data collection and structuring, saving it in a database named "country_db" in the "artists" collection:<br>
   **scrapy crawl artists**
 
-4. Utilize os comandos abaixo para gerar esses dados em formato json ou csv.<br/>
+4. To generate data in JSON or CSV format, use the following commands:<br/>
   **scrapy crawl artists -O artists.json**<br/>
   **scrapy crawl artists -O artists.csv**
 
-5. Para visualização com o **StreamLit** : <br/>
-Entrar na pasta country/streamlit
-Utilizar o comando **streamlit run app.py**
+5. To view data with **StreamLit** : <br/>
+Navigate to the country/streamlit folder and run:
+ **streamlit run app.py**
