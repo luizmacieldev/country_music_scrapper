@@ -31,7 +31,7 @@ The collected data is organized and stored in MongoDB, enabling easy access and 
 ## 🚀 How to Run the Project
 
 ### Prerequisites
-- **Python 3.8+**
+- **Python 3.10+**
 - **Scrapy**
 - **MongoDB**
 - **Streamlit**
